@@ -12,9 +12,7 @@ export default {
     return {
       drawerOpen: false,
       currentPage: {id: 'store'},
-      cart: [
-
-      ],
+      cart: [],
       storeItems: [
         // {
         //   name: 'Example Product',
@@ -120,7 +118,7 @@ export default {
             brief: `Item no. ${i + 1}`,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem leo. Nullam tincidunt, lectus eu congue viverra, neque sapien hendrerit lacus, eget vestibulum urna erat id urna. Pellentesque feugiat varius libero consequat ullamcorper. Vivamus at congue lorem. Morbi ut vulputate ligula. Cras lobortis leo ligula, ac pulvinar nibh mollis vitae. Quisque sem tellus, luctus in risus nec, pulvinar volutpat sem. Aliquam at enim sodales, sagittis leo vitae, congue lacus. Aliquam in pellentesque massa. Nulla maximus laoreet orci ut aliquet. Aliquam condimentum dolor dolor, at luctus dui rutrum in. Sed a tristique magna, id cursus nunc. Integer mollis nisl ut magna bibendum venenatis. Pellentesque lacinia congue mi ac imperdiet. Suspendisse mattis hendrerit augue id vestibulum. ',
             options: [
-                'Vinyl'
+              'Vinyl'
             ]
           });
     }
@@ -168,9 +166,9 @@ export default {
   <q-layout view="HHH lpr FFF">
     <q-header class="bg-primary text-white">
       <q-toolbar>
-        <q-btn flat round dense icon="menu" @click="toggleDrawer"></q-btn>
+        <q-btn class="center" flat round dense icon="menu" @click="toggleDrawer"></q-btn>
         <q-toolbar-title>
-          Music Store
+          <p class="center">Music Store</p>
         </q-toolbar-title>
         <q-btn
             flat dense
@@ -242,5 +240,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.center {
+  padding-top: 15px;
+  height: 50px;
+  display: inline;
+  vertical-align: middle;
+}
 </style>
