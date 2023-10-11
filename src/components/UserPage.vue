@@ -5,7 +5,6 @@ export default {
     args: Array
   },
   mounted: function () {
-    console.log(this.args);
   }
 }
 </script>

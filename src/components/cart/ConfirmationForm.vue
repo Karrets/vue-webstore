@@ -6,8 +6,7 @@ export default {
 
 <template>
   <div class="q-mx-lg text-justify">
-    <h3>We will be at your house with<br>your items soon :-)</h3>
-    <q-btn>Sure!</q-btn>
+    <p class="text-h6">Thank you for placing your order, check your inbox for additional details on your order.</p>
   </div>
 </template>
 

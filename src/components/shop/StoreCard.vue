@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       modalOpen: false,
-      purchaseType: this.item.options[0]
+      purchaseType: this.item.options[0] || "None Available"
     }
   },
 
@@ -13,11 +13,7 @@ export default {
     item: {
       type: Object,
       required: true,
-
-      validator(value) {
-        return value.name && value.brief && value.description && value.options;
-      },
-    }
+    },
   },
 
   emits: [
@@ -28,17 +24,13 @@ export default {
 
 <template class="store-card">
   <div>
-    <q-card v-ripple class="product-card q-mx-sm q-my-md" @click="this.modalOpen = true">
-      <img v-if="item.imgSrc"
-           :src="item.imgSrc"
+    <q-card v-ripple class="product-card" @click="this.modalOpen = true">
+      <img :src="item.imgSrc"
            :alt="item.name"
            width="300"
            height="300">
-      <img v-else
-           src="/src/assets/NoImageAvailable.jpg"
-           :alt="item.name">
       <q-card-section>
-        <div class="text-h6">{{ item.name }}</div>
+        <div class="text-h6">{{ item.name }} <br/> ({{ this.item.price }})</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
@@ -55,7 +47,16 @@ export default {
         <img :src="item.imgSrc" :alt="item.name">
 
         <q-card-section class="product-description">
-          {{ item.description }}
+          <q-list bordered separator>
+            <q-item>
+              <q-item-section><p class="list-header">Track List</p></q-item-section>
+            </q-item>
+            <q-item v-for="(track, index) in item.tracklist"
+                    :key="'track-' + index"
+            >
+              <q-item-section>{{ index + 1 }}. {{ track }}</q-item-section>
+            </q-item>
+          </q-list>
         </q-card-section>
 
         <q-card-section>
@@ -63,7 +64,8 @@ export default {
               filled
               v-model="this.purchaseType"
               :options="this.item.options"
-              label="Format" />
+              :disable="this.item.options.length === 0"
+              label="Format"/>
         </q-card-section>
         <q-card-section class="row justify-end">
           <q-btn
@@ -71,7 +73,7 @@ export default {
               v-close-popup color="primary"
               icon-right="add_shopping_cart"
               label="Add to Cart"
-              @click="$emit('add-to-cart', {...item, purchaseType: this.purchaseType})">
+              @click="$emit('add-to-cart', {...item,id: `${item.id}-${this.purchaseType}`, purchaseType: this.purchaseType})">
           </q-btn>
         </q-card-section>
       </q-card>
@@ -80,18 +82,17 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.store-card {
+.product-card {
   transition: 0.3s;
+
+  max-width: 300px;
+  height: 100%;
 
   &:hover {
     cursor: pointer;
     transform: scale(110%);
     z-index: 5;
   }
-}
-
-.product-card {
-  max-width: 300px;
 }
 
 q-card {

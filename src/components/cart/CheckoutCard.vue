@@ -21,14 +21,15 @@ export default {
 
     <slot></slot>
 
-    <div class="row justify-around">
+    <div class="row justify-between">
       <q-btn
           @click="$emit('previous')"
           v-if="previous"
-          color="primary"
+          color="secondary"
           icon-right="arrow_back"
           class="q-ma-sm justify-start">{{ this.previous }}
       </q-btn>
+      <div v-else></div>
       <q-btn
           @click="$emit('next')"
           v-if="next"
@@ -36,6 +37,7 @@ export default {
           icon-right="arrow_forward"
           class="q-ma-sm">{{ this.next }}
       </q-btn>
+      <div v-else></div>
     </div>
   </q-card>
 </template>

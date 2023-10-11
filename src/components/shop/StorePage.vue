@@ -1,6 +1,6 @@
 <script>
 
-import StoreCard from "@/components/part/StoreCard.vue";
+import StoreCard from "@/components/shop/StoreCard.vue";
 
 export default {
   id: "StorePage",
@@ -8,6 +8,7 @@ export default {
   data: function () {
     return {
       searchText: '',
+      maxItems: 18
     }
   },
 
@@ -18,17 +19,26 @@ export default {
     }
   },
 
-  computed: {
-    postFilter() {
-      if(!this.searchText)
-        return this.prefilter;
-
-      return this.prefilter.filter(item => item.name.toLowerCase().includes(this.searchText.toLowerCase()));
+  methods: {
+    resetMax() {
+      this.maxItems = 18;
     }
   },
 
+  computed: {
+    postFilter() {
+      let list = []
+
+      if (!this.searchText)
+        list = this.prefilter;
+      else
+        list = this.prefilter.filter(item => item.name.toLowerCase().includes(this.searchText.toLowerCase()));
+      return list.slice(0, this.maxItems);
+    },
+  },
+
   emits: [
-      'add-to-cart'
+    'add-to-cart'
   ]
 }
 </script>
@@ -48,13 +58,22 @@ export default {
         </template>
       </q-input>
     </div>
-    <div class="row justify-around q-mx-md">
+    <div class="row q-pb-lg q-gutter-lg justify-around">
       <store-card
           @add-to-cart="(item) => $emit('add-to-cart', item)"
           :item="storeItem"
           v-for="(storeItem, index) in this.postFilter"
           :key="`card-${index}`">
       </store-card>
+    </div>
+    <div class="q-pt-lg row justify-center">
+      <q-btn
+          v-show="maxItems < prefilter.length"
+          label="Load More..."
+          color="primary"
+          size="lg"
+          @click="maxItems += 12">
+      </q-btn>
     </div>
   </div>
 </template>

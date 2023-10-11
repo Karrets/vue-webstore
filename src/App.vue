@@ -1,5 +1,5 @@
 <script>
-import {Cart, Store, User} from "@/components/page/PagesGroup.vue";
+import {Cart, Store, User} from "@/components/PagesGroup.vue";
 
 export default {
   id: 'PageIndex',
@@ -12,16 +12,7 @@ export default {
     return {
       drawerOpen: false,
       currentPage: {id: 'store'},
-      cart: [],
-      storeItems: [
-        // {
-        //   name: 'Example Product',
-        //   imgSrc: 'https://picsum.photos/200/150?random=-1',
-        //   brief: 'Brief description',
-        //   description: 'Full Description',
-        //   modal: false,
-        // }
-      ],
+      storeItems: require('@/assets/albums.json').sort(() => Math.random() - 0.5),
       menuItems: [
         {
           header: true, //Disables ripple and clicking, as well as new bg color
@@ -31,27 +22,27 @@ export default {
         {
           icon: '', //Icon, leave blank/undef if none
           label: 'All', //Text portion
-          page: {id: 'all'}, //Link for this menuitem.
+          page: {id: 'shop', mod: 'all'}, //Link for this menuitem.
         },
         {
           icon: '',
           label: 'Vinyl Records',
-          page: {id: 'vinyl'},
+          page: {id: 'shop', mod: 'vinyl'},
         },
         {
           icon: '',
           label: 'Cassettes',
-          page: {id: 'cassette'},
+          page: {id: 'shop', mod: 'cassette'},
         },
         {
           icon: '',
           label: 'CDs',
-          page: {id: 'cd'},
+          page: {id: 'shop', mod: 'cd'},
         },
         {
           icon: '',
           label: 'Digital',
-          page: {id: 'digital'},
+          page: {id: 'shop', mod: 'digital'},
         },
         {separator: true},
         {
@@ -104,71 +95,51 @@ export default {
 
     digitalOnly() {
       return this.storeItems.filter(value => value.options.includes('Digital'));
+    },
+
+    prefiltered() {
+      switch (this.currentPage.mod) {
+        case "vinyl":
+          return this.vinylOnly
+        case "cassette":
+          return this.cassetteOnly
+        case "cd":
+          return this.cdOnly
+        case "digital":
+          return this.digitalOnly
+      }
+
+      return this.storeItems;
+    }
+  },
+
+  watch: {
+    currentPage: {
+      handler() {
+        localStorage.setItem('curPage', this.currentPage.id)
+        this.$refs.storePage.resetMax();
+      },
+      deep: true
     }
   },
 
   mounted: function () {
-    this.navigateTo(this.menuItems[1].page);
-
-    for (let i = 0; i < 25; i++) {
-      this.storeItems.push(
-          {
-            name: `Vinyl ${i + 1}`,
-            imgSrc: `https://picsum.photos/1000/1000?random=${i}`,
-            brief: `Item no. ${i + 1}`,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem leo. Nullam tincidunt, lectus eu congue viverra, neque sapien hendrerit lacus, eget vestibulum urna erat id urna. Pellentesque feugiat varius libero consequat ullamcorper. Vivamus at congue lorem. Morbi ut vulputate ligula. Cras lobortis leo ligula, ac pulvinar nibh mollis vitae. Quisque sem tellus, luctus in risus nec, pulvinar volutpat sem. Aliquam at enim sodales, sagittis leo vitae, congue lacus. Aliquam in pellentesque massa. Nulla maximus laoreet orci ut aliquet. Aliquam condimentum dolor dolor, at luctus dui rutrum in. Sed a tristique magna, id cursus nunc. Integer mollis nisl ut magna bibendum venenatis. Pellentesque lacinia congue mi ac imperdiet. Suspendisse mattis hendrerit augue id vestibulum. ',
-            options: [
-              'Vinyl'
-            ]
-          });
-    }
-    for (let i = 25; i < 50; i++) {
-      this.storeItems.push(
-          {
-            name: `Cassette ${i + 1 - 25}`,
-            imgSrc: `https://picsum.photos/1000/1000?random=${i}`,
-            brief: `Item no. ${i + 1}`,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem leo. Nullam tincidunt, lectus eu congue viverra, neque sapien hendrerit lacus, eget vestibulum urna erat id urna. Pellentesque feugiat varius libero consequat ullamcorper. Vivamus at congue lorem. Morbi ut vulputate ligula. Cras lobortis leo ligula, ac pulvinar nibh mollis vitae. Quisque sem tellus, luctus in risus nec, pulvinar volutpat sem. Aliquam at enim sodales, sagittis leo vitae, congue lacus. Aliquam in pellentesque massa. Nulla maximus laoreet orci ut aliquet. Aliquam condimentum dolor dolor, at luctus dui rutrum in. Sed a tristique magna, id cursus nunc. Integer mollis nisl ut magna bibendum venenatis. Pellentesque lacinia congue mi ac imperdiet. Suspendisse mattis hendrerit augue id vestibulum. ',
-            options: [
-              'Cassette'
-            ]
-          });
-    }
-    for (let i = 50; i < 75; i++) {
-      this.storeItems.push(
-          {
-            name: `CD ${i + 1 - 50}`,
-            imgSrc: `https://picsum.photos/1000/1000?random=${i}`,
-            brief: `Item no. ${i + 1}`,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem leo. Nullam tincidunt, lectus eu congue viverra, neque sapien hendrerit lacus, eget vestibulum urna erat id urna. Pellentesque feugiat varius libero consequat ullamcorper. Vivamus at congue lorem. Morbi ut vulputate ligula. Cras lobortis leo ligula, ac pulvinar nibh mollis vitae. Quisque sem tellus, luctus in risus nec, pulvinar volutpat sem. Aliquam at enim sodales, sagittis leo vitae, congue lacus. Aliquam in pellentesque massa. Nulla maximus laoreet orci ut aliquet. Aliquam condimentum dolor dolor, at luctus dui rutrum in. Sed a tristique magna, id cursus nunc. Integer mollis nisl ut magna bibendum venenatis. Pellentesque lacinia congue mi ac imperdiet. Suspendisse mattis hendrerit augue id vestibulum. ',
-            options: [
-              'CD'
-            ]
-          });
-    }
-    for (let i = 75; i < 100; i++) {
-      this.storeItems.push(
-          {
-            name: `Digital ${i + 1 - 75}`,
-            imgSrc: `https://picsum.photos/1000/1000?random=${i}`,
-            brief: `Item no. ${i + 1}`,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem leo. Nullam tincidunt, lectus eu congue viverra, neque sapien hendrerit lacus, eget vestibulum urna erat id urna. Pellentesque feugiat varius libero consequat ullamcorper. Vivamus at congue lorem. Morbi ut vulputate ligula. Cras lobortis leo ligula, ac pulvinar nibh mollis vitae. Quisque sem tellus, luctus in risus nec, pulvinar volutpat sem. Aliquam at enim sodales, sagittis leo vitae, congue lacus. Aliquam in pellentesque massa. Nulla maximus laoreet orci ut aliquet. Aliquam condimentum dolor dolor, at luctus dui rutrum in. Sed a tristique magna, id cursus nunc. Integer mollis nisl ut magna bibendum venenatis. Pellentesque lacinia congue mi ac imperdiet. Suspendisse mattis hendrerit augue id vestibulum. ',
-            options: [
-              'Digital'
-            ]
-          });
-    }
+    let stored = localStorage.getItem('curPage');
+    if(stored)
+      this.navigateTo({id: stored});
+    else
+      this.navigateTo(this.menuItems[1].page);
   }
 }
 </script>
 
 <template>
-  <q-layout view="HHH lpr FFF">
+  <q-layout view="HHH Lpr FFF">
     <q-header class="bg-primary text-white">
       <q-toolbar>
-        <q-btn class="center" flat round dense icon="menu" @click="toggleDrawer"></q-btn>
+        <q-btn flat round dense icon="menu" @click="toggleDrawer"></q-btn>
         <q-toolbar-title>
-          <p class="center">Music Store</p>
+          Music Store
         </q-toolbar-title>
         <q-btn
             flat dense
@@ -208,42 +179,19 @@ export default {
     <q-page-container>
       <q-page padding>
         <store
-            @add-to-cart="(item) => cart.push(item)"
-            v-if="currentPage.id === 'all'"
-            :prefilter="this.storeItems">
-        </store>
-        <store
-            @add-to-cart="(item) => cart.push(item)"
-            v-if="currentPage.id === 'vinyl'"
-            :prefilter="this.vinylOnly">
-        </store>
-        <store
-            @add-to-cart="(item) => cart.push(item)"
-            v-if="currentPage.id === 'cassette'"
-            :prefilter="this.cassetteOnly">
-        </store>
-        <store
-            @add-to-cart="(item) => cart.push(item)"
-            v-if="currentPage.id === 'cd'"
-            :prefilter="this.cdOnly">
-        </store>
-        <store
-            @add-to-cart="(item) => cart.push(item)"
-            v-if="currentPage.id === 'digital'"
-            :prefilter="this.digitalOnly"></store>
-        <cart v-if="currentPage.id === 'cart'" :cart="this.cart"></cart>
-        <user v-if="currentPage.id === 'user'"></user>
-        <user v-if="currentPage.id === 'payment'"></user>
+            @add-to-cart="(item) => this.$refs.cart.addToCart(item)"
+            :prefilter="this.prefiltered"
+            v-show="currentPage.id === 'shop'"
+            ref="storePage"
+        ></store>
+        <cart v-show="currentPage.id === 'cart'" ref="cart"></cart>
+        <user v-show="currentPage.id === 'user'"></user>
+        <user v-show="currentPage.id === 'payment'"></user>
       </q-page>
     </q-page-container>
   </q-layout>
 </template>
 
-<style lang="scss" scoped>
-.center {
-  padding-top: 15px;
-  height: 50px;
-  display: inline;
-  vertical-align: middle;
-}
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 </style>
