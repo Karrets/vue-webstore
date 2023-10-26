@@ -26,7 +26,7 @@ export default {
           @click="$emit('previous')"
           v-if="previous"
           color="secondary"
-          icon-right="arrow_back"
+          icon="arrow_back"
           class="q-ma-sm justify-start">{{ this.previous }}
       </q-btn>
       <div v-else></div>

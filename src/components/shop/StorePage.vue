@@ -22,6 +22,13 @@ export default {
   methods: {
     resetMax() {
       this.maxItems = 18;
+    },
+
+    incMax(index, done) {
+      this.maxItems += 12;
+
+      if(done)
+        done();
     }
   },
 
@@ -58,14 +65,14 @@ export default {
         </template>
       </q-input>
     </div>
-    <div class="row q-pb-lg q-gutter-lg justify-around">
+    <q-infinite-scroll @load="incMax" class="row q-pb-lg q-gutter-lg justify-around">
       <store-card
           @add-to-cart="(item) => $emit('add-to-cart', item)"
           :item="storeItem"
           v-for="(storeItem, index) in this.postFilter"
           :key="`card-${index}`">
       </store-card>
-    </div>
+    </q-infinite-scroll>
     <div class="q-pt-lg row justify-center">
       <q-btn
           v-show="maxItems < prefilter.length"
