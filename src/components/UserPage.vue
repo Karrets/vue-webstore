@@ -1,20 +1,17 @@
 <script>
 export default {
-  id: "UserPage",
+  id: 'UserPage',
   props: {
     args: Array
   },
-  mounted: function () {
-  }
-}
+  mounted: function () {}
+};
 </script>
 
 <template class="user-page">
   <div>
-    <h1>{{this.args}}</h1>
+    <h1>{{ this.args }}</h1>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

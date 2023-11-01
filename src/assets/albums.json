@@ -18,12 +18,7 @@
       "Glimmer",
       "One More Hour"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$46"
   },
   {
@@ -46,11 +41,7 @@
       "Love/Paranoia",
       "New Person, Same Old Mistakes"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$24"
   },
   {
@@ -69,11 +60,7 @@
       "Feels Like We Only Go Backwards - Live",
       "Apocalypse Dreams - Live"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$34"
   },
   {
@@ -95,10 +82,7 @@
       "Nothing That Has Happened So Far Has Been Anything We Could Control",
       "Sun's Coming Up"
     ],
-    "options": [
-      "Digital",
-      "CD"
-    ],
+    "options": ["Digital", "CD"],
     "price": "$43"
   },
   {
@@ -119,11 +103,7 @@
       "Runway Houses City Clouds",
       "I Don't Really Mind"
     ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$55"
   },
   {
@@ -131,16 +111,8 @@
     "name": "Tame Impala - Lonerism (10 Year Anniversary Edition / Unreleased Demos)",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273d9b0e0948149c59a9bf5bc76",
     "brief": "Tame Impala's album released in 2023",
-    "tracklist": [
-      "Retina Show - Unreleased Demo",
-      "Sidetracked Soundtrack - Unreleased Demo"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Retina Show - Unreleased Demo", "Sidetracked Soundtrack - Unreleased Demo"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$19"
   },
   {
@@ -148,14 +120,8 @@
     "name": "Thundercat - No More Lies",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273882c536d8dcfb086bcf9733b",
     "brief": "Thundercat's album released in 2023",
-    "tracklist": [
-      "No More Lies"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["No More Lies"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$50"
   },
   {
@@ -176,10 +142,7 @@
       "Music.",
       "Photographics"
     ],
-    "options": [
-      "Digital",
-      "Vinyl"
-    ],
+    "options": ["Digital", "Vinyl"],
     "price": "$46"
   },
   {
@@ -202,12 +165,7 @@
       "Fool's Love",
       "Timestables"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$44"
   },
   {
@@ -228,12 +186,7 @@
       "Where Are We Now?",
       "Terandara"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$57"
   },
   {
@@ -241,14 +194,8 @@
     "name": "Mild Orange - Oh Yeah",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27388352d64b0d19f38bf5f4b77",
     "brief": "Mild Orange's album released in 2022",
-    "tracklist": [
-      "Oh Yeah"
-    ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Oh Yeah"],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$17"
   },
   {
@@ -256,14 +203,8 @@
     "name": "Mild Orange - What's Your Fire? // Hollywood Dreams",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27332fe2e3608d4560174612ead",
     "brief": "Mild Orange's album released in 2021",
-    "tracklist": [
-      "What\u2019s Your Fire? - Single Version",
-      "Hollywood Dreams"
-    ],
-    "options": [
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["What\u2019s Your Fire? - Single Version", "Hollywood Dreams"],
+    "options": ["Vinyl", "CD"],
     "price": "$51"
   },
   {
@@ -271,15 +212,8 @@
     "name": "Mild Orange - The Time of Our Lives",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273518f959521dbdecdd6c02af9",
     "brief": "Mild Orange's album released in 2021",
-    "tracklist": [
-      "The Time of Our Lives"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["The Time of Our Lives"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$25"
   },
   {
@@ -287,14 +221,8 @@
     "name": "Mild Orange - This Kinda Day",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273636c72e080d9bdea0e74b7d0",
     "brief": "Mild Orange's album released in 2021",
-    "tracklist": [
-      "This Kinda Day"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "tracklist": ["This Kinda Day"],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$53"
   },
   {
@@ -302,14 +230,8 @@
     "name": "Mild Orange - Getting Warmer",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2730b0382d288da7bbec9fd1e6d",
     "brief": "Mild Orange's album released in 2021",
-    "tracklist": [
-      "Getting Warmer"
-    ],
-    "options": [
-      "Digital",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Getting Warmer"],
+    "options": ["Digital", "CD", "Cassette"],
     "price": "$31"
   },
   {
@@ -317,14 +239,8 @@
     "name": "Mild Orange - First Taste",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2736fb6bcc793ba1c78f20914fe",
     "brief": "Mild Orange's album released in 2020",
-    "tracklist": [
-      "First Taste"
-    ],
-    "options": [
-      "Digital",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["First Taste"],
+    "options": ["Digital", "CD", "Cassette"],
     "price": "$33"
   },
   {
@@ -332,14 +248,8 @@
     "name": "Mild Orange - Making Things",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ee4be1b4147b9d31c613b96a",
     "brief": "Mild Orange's album released in 2020",
-    "tracklist": [
-      "Making Things"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Making Things"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$58"
   },
   {
@@ -353,11 +263,7 @@
       "Show Me",
       "Tomb for Rockets"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$57"
   },
   {
@@ -365,15 +271,8 @@
     "name": "Feng Suave - Unweaving the Rainbow Forever",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273c39fa3fe4205ea7c473a5309",
     "brief": "Feng Suave's album released in 2021",
-    "tracklist": [
-      "Unweaving the Rainbow Forever"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Unweaving the Rainbow Forever"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$52"
   },
   {
@@ -381,15 +280,8 @@
     "name": "Feng Suave - Come Gather 'Round",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732e4dabdbb01a9ea224418270",
     "brief": "Feng Suave's album released in 2021",
-    "tracklist": [
-      "Come Gather 'Round"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Come Gather 'Round"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$30"
   },
   {
@@ -397,15 +289,8 @@
     "name": "Feng Suave - Tomb for Rockets",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27348944d32efa9ec6b8ca9a7c0",
     "brief": "Feng Suave's album released in 2021",
-    "tracklist": [
-      "Tomb for Rockets"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Tomb for Rockets"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$11"
   },
   {
@@ -413,15 +298,8 @@
     "name": "Feng Suave - People Wither - A COLORS SHOW",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27367bd8119fb639c4f51b5fcb1",
     "brief": "Feng Suave's album released in 2020",
-    "tracklist": [
-      "People Wither - A COLORS SHOW"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["People Wither - A COLORS SHOW"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$22"
   },
   {
@@ -437,11 +315,7 @@
       "People Wither",
       "Day One"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$29"
   },
   {
@@ -449,14 +323,8 @@
     "name": "Feng Suave - Half-Moon Bag",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273be0bdc38ff06580f5167e893",
     "brief": "Feng Suave's album released in 2020",
-    "tracklist": [
-      "Half-Moon Bag"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Half-Moon Bag"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$11"
   },
   {
@@ -464,13 +332,8 @@
     "name": "Feng Suave - I'm Warping Here",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273dddd5379ce59fbd2f65665e4",
     "brief": "Feng Suave's album released in 2020",
-    "tracklist": [
-      "I'm Warping Here"
-    ],
-    "options": [
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["I'm Warping Here"],
+    "options": ["Vinyl", "CD"],
     "price": "$39"
   },
   {
@@ -478,13 +341,8 @@
     "name": "Feng Suave - Maybe Another Time",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273defc6a16e0ea525dbd8327e0",
     "brief": "Feng Suave's album released in 2020",
-    "tracklist": [
-      "Maybe Another Time"
-    ],
-    "options": [
-      "Digital",
-      "CD"
-    ],
+    "tracklist": ["Maybe Another Time"],
+    "options": ["Digital", "CD"],
     "price": "$58"
   },
   {
@@ -492,14 +350,8 @@
     "name": "Feng Suave - Toking, Dozing",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273b9de00f3b07fd24fd858273e",
     "brief": "Feng Suave's album released in 2020",
-    "tracklist": [
-      "Toking, Dozing"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Toking, Dozing"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$57"
   },
   {
@@ -519,11 +371,7 @@
       "That's What I Get",
       "Guitar Romantic Search Adventure"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$16"
   },
   {
@@ -544,11 +392,7 @@
       "I'm Full",
       "Do Not Wait"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$60"
   },
   {
@@ -556,13 +400,8 @@
     "name": "Wallows - WISH ME LUCK",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27347852cb8bbaecee1f038ceb3",
     "brief": "Wallows' album released in 2022",
-    "tracklist": [
-      "WISH ME LUCK"
-    ],
-    "options": [
-      "Digital",
-      "CD"
-    ],
+    "tracklist": ["WISH ME LUCK"],
+    "options": ["Digital", "CD"],
     "price": "$46"
   },
   {
@@ -570,15 +409,8 @@
     "name": "Wallows - Marvelous (Cole\u2019s Remix)",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273cb8719c5258f76be21449c9d",
     "brief": "Wallows' album released in 2022",
-    "tracklist": [
-      "Marvelous (Cole\u2019s Remix)",
-      "Marvelous"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Marvelous (Cole\u2019s Remix)", "Marvelous"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$54"
   },
   {
@@ -586,16 +418,8 @@
     "name": "Wallows - At the End of the Day",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2733695afc66bc74627d8c84254",
     "brief": "Wallows' album released in 2022",
-    "tracklist": [
-      "At the End of the Day",
-      "Especially You",
-      "I Don't Want to Talk"
-    ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["At the End of the Day", "Especially You", "I Don't Want to Talk"],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$60"
   },
   {
@@ -603,15 +427,8 @@
     "name": "Wallows - Especially You",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27396f29c1dfbb42f1246418922",
     "brief": "Wallows' album released in 2022",
-    "tracklist": [
-      "Especially You",
-      "I Don't Want to Talk"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Especially You", "I Don't Want to Talk"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$30"
   },
   {
@@ -619,13 +436,8 @@
     "name": "Wallows - I Don't Want to Talk",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273798bfe399a5f6ce0aa1b43bc",
     "brief": "Wallows' album released in 2021",
-    "tracklist": [
-      "I Don't Want to Talk"
-    ],
-    "options": [
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["I Don't Want to Talk"],
+    "options": ["CD", "Cassette"],
     "price": "$43"
   },
   {
@@ -646,12 +458,7 @@
       "OK - with Remi Wolf & Solomonophonic",
       "OK"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$24"
   },
   {
@@ -659,15 +466,8 @@
     "name": "Wallows - Quarterback",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273de492e47f8c0a42e92001f4b",
     "brief": "Wallows' album released in 2021",
-    "tracklist": [
-      "Quarterback"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Quarterback"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$25"
   },
   {
@@ -675,16 +475,8 @@
     "name": "Wallows - OK (with Remi Wolf & Solomonophonic)",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2737980941707cad8fcbc600c2a",
     "brief": "Wallows' album released in 2021",
-    "tracklist": [
-      "OK - with Remi Wolf & Solomonophonic",
-      "OK"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["OK - with Remi Wolf & Solomonophonic", "OK"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$24"
   },
   {
@@ -715,11 +507,7 @@
       "You Only Live Once",
       "Mercy Mercy Me (The Ecology) - You Only Live Once B-Side"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$41"
   },
   {
@@ -738,9 +526,7 @@
       "Not The Same Anymore",
       "Ode To The Mets"
     ],
-    "options": [
-      "Digital"
-    ],
+    "options": ["Digital"],
     "price": "$50"
   },
   {
@@ -761,11 +547,7 @@
       "Happy Ending",
       "Call It Fate, Call It Karma"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$36"
   },
   {
@@ -785,11 +567,7 @@
       "Metabolism",
       "Life Is Simple in the Moonlight"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$13"
   },
   {
@@ -813,11 +591,7 @@
       "Evening Sun",
       "Red Light"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$56"
   },
   {
@@ -838,12 +612,7 @@
       "The End Has No End",
       "I Can't Win"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$46"
   },
   {
@@ -864,11 +633,7 @@
       "Trying Your Luck",
       "Take It Or Leave It"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$42"
   },
   {
@@ -876,18 +641,8 @@
     "name": "The Strokes - Future Present Past",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2738509ba1ecd34e1d5410b9a22",
     "brief": "The Strokes' album released in 2016",
-    "tracklist": [
-      "Drag Queen",
-      "Oblivius",
-      "Threat of Joy",
-      "Oblivius - Moretti Remix"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Drag Queen", "Oblivius", "Threat of Joy", "Oblivius - Moretti Remix"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$30"
   },
   {
@@ -895,13 +650,8 @@
     "name": "The Strokes - Fast Animals",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2733b09fe6608294bf205fff111",
     "brief": "The Strokes' album released in 2013",
-    "tracklist": [
-      "Fast Animals"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl"
-    ],
+    "tracklist": ["Fast Animals"],
+    "options": ["Digital", "Vinyl"],
     "price": "$34"
   },
   {
@@ -913,11 +663,7 @@
       "Taken for a Fool",
       "Taken for a Fool (feat. Elvis Costello) - Live from Madison Square Garden, New York, NY - April 2011"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$22"
   },
   {
@@ -946,12 +692,7 @@
       "Reflection No. 7 Anwatin Pond",
       "Regroup & Start Anew"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$56"
   },
   {
@@ -968,12 +709,7 @@
       "Fillmore County",
       "Reflection No. 6"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$15"
   },
   {
@@ -990,11 +726,7 @@
       "Halcyon Age - Live from the Decorah Farmers Market",
       "That I Miss You - Live from the Decorah Farmers Market"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$27"
   },
   {
@@ -1021,11 +753,7 @@
       "Angel Youth",
       "Yours Truly"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$40"
   },
   {
@@ -1049,11 +777,7 @@
       "Water Boils",
       "Reveries"
     ],
-    "options": [
-      "Digital",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "CD", "Cassette"],
     "price": "$46"
   },
   {
@@ -1061,15 +785,8 @@
     "name": "Vansire - Bushwick Cowboy",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273f8970949be3b996516a27f45",
     "brief": "Vansire's album released in 2023",
-    "tracklist": [
-      "Bushwick Cowboy",
-      "Statelines"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "tracklist": ["Bushwick Cowboy", "Statelines"],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$25"
   },
   {
@@ -1077,16 +794,8 @@
     "name": "Poolside - Float Away",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2735175df497e793fd5a7647910",
     "brief": "Poolside's album released in 2023",
-    "tracklist": [
-      "Float Away",
-      "Each Night",
-      "Back To Life"
-    ],
-    "options": [
-      "Digital",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Float Away", "Each Night", "Back To Life"],
+    "options": ["Digital", "CD", "Cassette"],
     "price": "$19"
   },
   {
@@ -1099,11 +808,7 @@
       "That I Miss You - Instrumental Tape Bounce",
       "Every Time Around - Tyler Neil Johnson Remix"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$17"
   },
   {
@@ -1111,14 +816,8 @@
     "name": "Vansire - A Long Drive Back",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2734f6ab8de0c221afcf7af8b85",
     "brief": "Vansire's album released in 2022",
-    "tracklist": [
-      "A Long Drive Back"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["A Long Drive Back"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$20"
   },
   {
@@ -1126,15 +825,8 @@
     "name": "Vansire - Night Vision",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273a792bfd6ee10f6d5b6077ed0",
     "brief": "Vansire's album released in 2022",
-    "tracklist": [
-      "Night Vision"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Night Vision"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$52"
   },
   {
@@ -1154,11 +846,7 @@
       "Out of Luck",
       "Can't Keep on with You"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$43"
   },
   {
@@ -1176,11 +864,7 @@
       "Rearrangers",
       "Rides"
     ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$53"
   },
   {
@@ -1188,13 +872,8 @@
     "name": "Small Forward - best friend",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273bea2fddf182dea5ec11a9b10",
     "brief": "Small Forward's album released in 2023",
-    "tracklist": [
-      "best friend"
-    ],
-    "options": [
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["best friend"],
+    "options": ["Vinyl", "CD"],
     "price": "$40"
   },
   {
@@ -1202,15 +881,8 @@
     "name": "Small Forward - Take Care",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273fe21c13f8a22612ade0e6c52",
     "brief": "Small Forward's album released in 2023",
-    "tracklist": [
-      "Take Care"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Take Care"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$13"
   },
   {
@@ -1218,15 +890,8 @@
     "name": "Small Forward - I Do",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2738002f16c06ed0d8e86b7ca8b",
     "brief": "Small Forward's album released in 2023",
-    "tracklist": [
-      "I Do"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["I Do"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$43"
   },
   {
@@ -1234,15 +899,8 @@
     "name": "Small Forward - Look At Me Now",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aea183255ca38bf4045dd588",
     "brief": "Small Forward's album released in 2023",
-    "tracklist": [
-      "Look At Me Now"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Look At Me Now"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$41"
   },
   {
@@ -1250,14 +908,8 @@
     "name": "Small Forward - Human Emotion",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732e8917a2595ec7f9c11fefab",
     "brief": "Small Forward's album released in 2022",
-    "tracklist": [
-      "Human Emotion"
-    ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Human Emotion"],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$40"
   },
   {
@@ -1265,15 +917,8 @@
     "name": "Small Forward - Kind of Funny",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b27378e905b3d0b378eb6537eb65",
     "brief": "Small Forward's album released in 2019",
-    "tracklist": [
-      "Kind of Funny"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Kind of Funny"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$22"
   },
   {
@@ -1281,15 +926,8 @@
     "name": "Small Forward - Tearjerker",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732eb46e6a261c799620e2865b",
     "brief": "Small Forward's album released in 2018",
-    "tracklist": [
-      "Tearjerker"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Tearjerker"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$49"
   },
   {
@@ -1305,12 +943,7 @@
       "Halfway",
       "Ancient Flows"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$12"
   },
   {
@@ -1332,11 +965,7 @@
       "Heirloom Pt. 1 (Bonus Track)",
       "Heirloom Pt. 2 (Bonus Track)"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$20"
   },
   {
@@ -1356,11 +985,7 @@
       "Cyril",
       "Pool"
     ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$58"
   },
   {
@@ -1393,11 +1018,7 @@
       "35mm / Moon Tower - Live at The Nave",
       "House - Live at The Nave"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "Cassette"],
     "price": "$15"
   },
   {
@@ -1420,12 +1041,7 @@
       "Reach You",
       "House"
     ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$35"
   },
   {
@@ -1433,16 +1049,8 @@
     "name": "Far Caspian - Pet Architect/Heirloom Pt. 1 & 2",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273c4019f47ad82a6eaed604283",
     "brief": "Far Caspian's album released in 2023",
-    "tracklist": [
-      "Pet Architect",
-      "Heirloom Pt. 1",
-      "Heirloom Pt. 2"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD"
-    ],
+    "tracklist": ["Pet Architect", "Heirloom Pt. 1", "Heirloom Pt. 2"],
+    "options": ["Digital", "Vinyl", "CD"],
     "price": "$44"
   },
   {
@@ -1450,18 +1058,8 @@
     "name": "Far Caspian - Pet Architect",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273b55ade8388cefea9991827b9",
     "brief": "Far Caspian's album released in 2023",
-    "tracklist": [
-      "Pet Architect",
-      "Own",
-      "The Last Remaining Light",
-      "Arbitrary Task"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Pet Architect", "Own", "The Last Remaining Light", "Arbitrary Task"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$25"
   },
   {
@@ -1469,15 +1067,8 @@
     "name": "Far Caspian - Own",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2739e8b0c4143b527653c73492e",
     "brief": "Far Caspian's album released in 2023",
-    "tracklist": [
-      "Own",
-      "The Last Remaining Light",
-      "Arbitrary Task"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl"
-    ],
+    "tracklist": ["Own", "The Last Remaining Light", "Arbitrary Task"],
+    "options": ["Digital", "Vinyl"],
     "price": "$36"
   },
   {
@@ -1485,16 +1076,8 @@
     "name": "Far Caspian - The Last Remaining Light",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273b49fae87abbf2dbb3b78f3bd",
     "brief": "Far Caspian's album released in 2023",
-    "tracklist": [
-      "The Last Remaining Light",
-      "Arbitrary Task"
-    ],
-    "options": [
-      "Digital",
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["The Last Remaining Light", "Arbitrary Task"],
+    "options": ["Digital", "Vinyl", "CD", "Cassette"],
     "price": "$57"
   },
   {
@@ -1502,14 +1085,8 @@
     "name": "Far Caspian - Arbitrary Task",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b2733c32143351d70e5fc9fe10eb",
     "brief": "Far Caspian's album released in 2023",
-    "tracklist": [
-      "Arbitrary Task"
-    ],
-    "options": [
-      "Vinyl",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Arbitrary Task"],
+    "options": ["Vinyl", "CD", "Cassette"],
     "price": "$54"
   },
   {
@@ -1517,15 +1094,8 @@
     "name": "Far Caspian - Following The Trend / Sun Room",
     "imgSrc": "https://i.scdn.co/image/ab67616d0000b273e61d815f4c6536e2d4467529",
     "brief": "Far Caspian's album released in 2022",
-    "tracklist": [
-      "Following the Trend",
-      "Sun Room"
-    ],
-    "options": [
-      "Digital",
-      "CD",
-      "Cassette"
-    ],
+    "tracklist": ["Following the Trend", "Sun Room"],
+    "options": ["Digital", "CD", "Cassette"],
     "price": "$53"
   }
 ]

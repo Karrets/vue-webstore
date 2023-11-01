@@ -1,8 +1,8 @@
-import '@quasar/extras/material-icons/material-icons.css'
+import '@quasar/extras/material-icons/material-icons.css';
+import { Dialog } from 'quasar';
 
 // To be used on app.use(Quasar, { ... })
 export default {
-  extras: ['roboto-font'],
   config: {},
-  plugins: {}
-}
+  plugins: { Dialog }
+};

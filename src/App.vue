@@ -1,9 +1,11 @@
 <script>
-import { Cart, Store, User } from '@/components/PagesGroup.vue'
-import albums from '@/assets/albums.json'
+import { Cart, Store, User } from '@/components/PagesGroup.vue';
+
+import albums from '@/assets/albums.json';
+import { StoreItem } from '@/models/StoreItem';
 
 export default {
-  id: 'PageIndex',
+  id: 'App',
 
   components: {
     Cart,
@@ -13,9 +15,10 @@ export default {
 
   data: function () {
     return {
+      shopLabel: null,
       drawerOpen: false,
       currentPage: { id: 'store' },
-      storeItems: albums,
+      storeItems: StoreItem.type(albums).sort(() => Math.random() - 0.5),
       menuItems: [
         {
           header: true, //Disables ripple and clicking, as well as new bg color
@@ -69,69 +72,60 @@ export default {
           page: { id: 'payment' }
         }
       ]
-    }
+    };
   },
 
   methods: {
     toggleDrawer: function () {
-      this.drawerOpen = !this.drawerOpen
+      this.drawerOpen = !this.drawerOpen;
     },
 
     navigateTo: function (link) {
-      console.log(link)
-      this.currentPage = link
+      console.log(link);
+      this.currentPage = link.page;
+      this.shopLabel = link.label;
     }
   },
 
   computed: {
     vinylOnly() {
-      return this.storeItems.filter((value) => value.options.includes('Vinyl'))
+      return this.storeItems.filter((value) => value.options.includes('Vinyl'));
     },
 
     cassetteOnly() {
-      return this.storeItems.filter((value) => value.options.includes('Cassette'))
+      return this.storeItems.filter((value) => value.options.includes('Cassette'));
     },
 
     cdOnly() {
-      return this.storeItems.filter((value) => value.options.includes('CD'))
+      return this.storeItems.filter((value) => value.options.includes('CD'));
     },
 
     digitalOnly() {
-      return this.storeItems.filter((value) => value.options.includes('Digital'))
+      return this.storeItems.filter((value) => value.options.includes('Digital'));
     },
 
     prefiltered() {
       switch (this.currentPage.mod) {
         case 'vinyl':
-          return this.vinylOnly
+          return this.vinylOnly;
         case 'cassette':
-          return this.cassetteOnly
+          return this.cassetteOnly;
         case 'cd':
-          return this.cdOnly
+          return this.cdOnly;
         case 'digital':
-          return this.digitalOnly
+          return this.digitalOnly;
       }
 
-      return this.storeItems
+      return this.storeItems;
     }
   },
 
-  watch: {
-    currentPage: {
-      handler() {
-        localStorage.setItem('curPage', this.currentPage.id)
-        this.$refs.storePage.resetMax()
-      },
-      deep: true
-    }
-  },
+  watch: {},
 
   mounted: function () {
-    let stored = localStorage.getItem('curPage')
-    if (stored) this.navigateTo({ id: stored })
-    else this.navigateTo(this.menuItems[1].page)
+    this.navigateTo(this.menuItems[1]);
   }
-}
+};
 </script>
 
 <template>
@@ -140,7 +134,13 @@ export default {
       <q-toolbar>
         <q-btn flat round dense icon="menu" @click="toggleDrawer"></q-btn>
         <q-toolbar-title> Music Store</q-toolbar-title>
-        <q-btn flat dense label="Cart" icon="shopping_cart" @click="navigateTo({ id: 'cart' })">
+        <q-btn
+          flat
+          dense
+          label="Cart"
+          icon="shopping_cart"
+          @click="navigateTo({ page: { id: 'cart' } })"
+        >
         </q-btn>
       </q-toolbar>
     </q-header>
@@ -155,8 +155,8 @@ export default {
               :class="{ 'bg-separator': menuItem.header }"
               :clickable="!menuItem.header"
               :ripple="!menuItem.header"
-              :active="menuItem.page === currentPage"
-              @click="navigateTo(menuItem.page)"
+              :active="menuItem.page === currentPage.page"
+              @click="navigateTo(menuItem)"
             >
               <q-item-section v-if="menuItem.icon" avatar>
                 <q-icon :name="menuItem.icon"></q-icon>
@@ -174,6 +174,7 @@ export default {
         <store
           @add-to-cart="(item) => this.$refs.cart.addToCart(item)"
           :prefilter="this.prefiltered"
+          :label="this.shopLabel"
           v-show="currentPage.id === 'shop'"
           ref="storePage"
         ></store>
