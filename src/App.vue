@@ -172,7 +172,7 @@ export default {
     <q-page-container>
       <q-page padding>
         <store
-          @add-to-cart="(item) => this.$refs.cart.addToCart(item)"
+          @add-to-cart="(item, type) => this.$refs.cart.addToCart(item, type)"
           :prefilter="this.prefiltered"
           :label="this.shopLabel"
           v-show="currentPage.id === 'shop'"

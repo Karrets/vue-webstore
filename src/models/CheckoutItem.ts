@@ -11,7 +11,8 @@ export class CheckoutItem extends StoreItem {
     if (source.qty) this.qty = source.qty;
     else this.qty = 1;
 
-    if (source && !this.options.includes(purchaseType)) throw new Error('Bad purchase type...');
+    if (source && !this.options.includes(purchaseType))
+      throw new Error(`Bad purchase type of ${purchaseType}`);
 
     this.type = purchaseType;
     this.checkoutID = `${this.id}-${purchaseType}`;

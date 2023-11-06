@@ -4,6 +4,7 @@ import CheckoutCard from '@/components/cart/CheckoutCard.vue';
 import PaymentForm from '@/components/cart/PaymentForm.vue';
 import ConfirmationForm from '@/components/cart/ConfirmationForm.vue';
 import CartItemCard from '@/components/cart/CartItemCard.vue';
+import { ShoppingCart } from '@/models/ShoppingCart';
 import { CheckoutItem } from '@/models/CheckoutItem';
 
 export default {
@@ -12,7 +13,8 @@ export default {
   data: function () {
     return {
       step: 0,
-      cart: {}
+      cart: new ShoppingCart(),
+      user: { shipping: {}, payment: {} }
     };
   },
 
@@ -31,16 +33,15 @@ export default {
 
     if (stored) {
       for (const property in stored) {
-        this.addToCart(new CheckoutItem(stored[property], stored[property].type));
+        this.addToCart(stored[property], stored[property].type);
         console.log(`Printing item in storage: `, stored[property]);
       }
     }
   },
 
   methods: {
-    addToCart(storeItem) {
-      if (this.cart[storeItem.checkoutID]) this.cart[storeItem.checkoutID].qty++;
-      else this.cart[storeItem.checkoutID] = storeItem;
+    addToCart(storeItem, type) {
+      this.cart.addItem(storeItem, type);
 
       this.step = 0;
     },
@@ -93,7 +94,7 @@ export default {
         @next="next"
         next="Payment"
       >
-        <shipping-form></shipping-form>
+        <shipping-form v-model="user.shipping"></shipping-form>
       </checkout-card>
       <checkout-card
         name="Payment"
@@ -103,7 +104,7 @@ export default {
         previous="Shipping"
         next="Confirmation"
       >
-        <payment-form></payment-form>
+        <payment-form v-model="user.payment"></payment-form>
       </checkout-card>
       <checkout-card
         name="Confirmation"
@@ -113,9 +114,9 @@ export default {
         previous="Payment"
         next="Place Order"
       >
-        <confirmation-form></confirmation-form>
+        <p>{{ user }}</p>
       </checkout-card>
-      <checkout-card name="Thank You" v-if="step === 3" @previous="previous" @next="next">
+      <checkout-card name="Thank You" v-if="step === 3">
         <confirmation-form></confirmation-form>
       </checkout-card>
     </div>

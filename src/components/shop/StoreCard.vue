@@ -79,7 +79,7 @@ export default {
             color="primary"
             icon-right="add_shopping_cart"
             label="Add to Cart"
-            @click="$emit('add-to-cart', new CheckoutItem(item, this.purchaseType))"
+            @click="$emit('add-to-cart', item, this.purchaseType)"
           >
           </q-btn>
         </q-card-section>

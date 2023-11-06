@@ -1,7 +1,5 @@
 <script>
 export default {
-  name: 'PaymentForm',
-
   data() {
     return {
       user: {
@@ -10,6 +8,29 @@ export default {
         ccv: ''
       }
     };
+  },
+
+  emits: ['update:modelValue'],
+
+  name: 'PaymentForm',
+
+  props: {
+    modelValue: Object
+  },
+
+  watch: {
+    user: {
+      handler() {
+        this.$emit('update:modelValue', this.user);
+      },
+      deep: true
+    },
+    modelValue: {
+      handler() {
+        Object.assign(this.user, this.modelValue);
+      },
+      deep: true
+    }
   }
 };
 </script>

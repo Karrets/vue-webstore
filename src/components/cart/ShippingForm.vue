@@ -1,7 +1,5 @@
 <script>
 export default {
-  name: 'ShippingForm',
-
   data() {
     return {
       user: {
@@ -13,6 +11,29 @@ export default {
         zip: ''
       }
     };
+  },
+
+  emits: ['update:modelValue'],
+
+  name: 'ShippingForm',
+
+  props: {
+    modelValue: Object
+  },
+
+  watch: {
+    user: {
+      deep: true,
+      handler() {
+        this.$emit('update:modelValue', this.user);
+      }
+    },
+    modelValue: {
+      handler() {
+        Object.assign(this.user, this.modelValue);
+      },
+      deep: true
+    }
   }
 };
 </script>

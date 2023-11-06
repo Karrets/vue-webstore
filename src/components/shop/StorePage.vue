@@ -70,7 +70,7 @@ export default {
     </div>
     <q-infinite-scroll @load="incMax" class="row q-pb-lg q-gutter-lg justify-around">
       <store-card
-        @add-to-cart="(item) => $emit('add-to-cart', item)"
+        @add-to-cart="(item, type) => $emit('add-to-cart', item, type)"
         :item="storeItem"
         v-for="(storeItem, index) in this.postFilter"
         :key="`card-${index}`"
